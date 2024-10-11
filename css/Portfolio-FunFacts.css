@@ -1,0 +1,100 @@
+/* set variable colors and page font*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  --bg-primary: #a0ddff;
+  --bg-secondary: #084c61;
+  --font-color-primary: #a53860;
+  --font-color-secondary: #36213e;
+  --backup-color: #ffeaee;
+}
+body {
+  background-color: var(--bg-primary);
+  cursor: default;
+}
+/* style heading */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+}
+h1 {
+  color: var(--font-color-primary);
+  font-weight: 700;
+}
+header nav ul {
+  display: flex;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  text-decoration: none;
+  color: var(--font-color-secondary);
+  font-size: 20px;
+  margin-right: 20px;
+  transition: color 0.3 ease;
+}
+header ul li a:hover {
+  color: var(--backup-color);
+}
+header ul li:last-child a {
+  margin-right: 0;
+}
+/* style main section */
+main .book{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+main .book h3{
+    color: var(--font-color-primary);
+    font-size: 20px;
+}
+main .book .cover{
+    width: 200px;
+    height: 300px;
+}
+main .book a{
+    text-decoration: none;
+    color: var(--font-color-secondary);
+    transition: color 0.3 ease;
+}
+main .book a:hover{
+    color: var(--backup-color);
+}
+main .song{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+main .song h3{
+    color: var(--font-color-primary);
+    font-size: 20px;
+}
+main .song a{
+    text-decoration: none;
+    color: var(--font-color-secondary);
+    transition: color 0.3 ease;
+}
+main .song a:hover{
+    color: var(--backup-color);
+}
+main .show{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+main .show h3{
+    color: var(--font-color-primary);
+    font-size: 20px;
+}
+main .show p{
+    font-size: 16px;
+    font-weight: 600;
+}
